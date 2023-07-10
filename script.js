@@ -1,8 +1,8 @@
-// Get references to HTML elements
+
 const newItemInput = document.getElementById('newItem');
 const todoList = document.getElementById('todoList');
 
-// Function to add a new item to the list
+
 function addItem() {
   const newItemText = newItemInput.value.trim();
   if (newItemText !== '') {
@@ -27,13 +27,13 @@ function addItem() {
   }
 }
 
-// Function to delete an item from the list
+
 function deleteItem(event) {
   const listItem = event.target.parentNode;
   todoList.removeChild(listItem);
 }
 
-// Function to edit an item in the list
+
 function editItem(event) {
   const listItem = event.target.parentNode;
   const itemText = listItem.firstChild;
